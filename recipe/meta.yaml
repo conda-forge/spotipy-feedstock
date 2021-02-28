@@ -1,5 +1,5 @@
 {% set name = "spotipy" %}
-{% set version = "2.16.1" %}
+{% set version = "2.17.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4564a6b05959deb82acc96a3fe6883db1ad9f8c73b7ff3b9f1f44db43feba0b8
+  sha256: 48cb98fdf7249eba11989c252b4b176b4d7fd69c72db49ada9ac6718874a519d
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -20,8 +20,8 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - requests >=2.20.0
-    - six >=1.10.0
+    - requests >=2.25.0
+    - six >=1.15.0
 
 test:
   imports:
@@ -36,7 +36,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.md
-  summary: 'A light weight Python library for the Spotify Web API'
+  summary: A light weight Python library for the Spotify Web API
   doc_url: http://spotipy.readthedocs.org/
   dev_url: https://github.com/plamere/spotipy/
 
