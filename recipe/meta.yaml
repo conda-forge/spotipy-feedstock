@@ -1,5 +1,5 @@
 {% set name = "spotipy" %}
-{% set version = "2.19.0" %}
+{% set version = "2.20.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 904f6e813dba837758e9510c1bee51d7ca217f169246625a13e693733dc33543
+  sha256: e26a99b75be2fc42375b2b4b355dc44fa1e59efc773afa17b784e1a4c0a818c9
 
 build:
   noarch: python
@@ -20,6 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.6
+    - redis-py >=3.5.3
     - requests >=2.25.0
     - six >=1.15.0
     - urllib3 >=1.26.0
