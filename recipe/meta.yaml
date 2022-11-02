@@ -1,5 +1,5 @@
 {% set name = "spotipy" %}
-{% set version = "2.20.0" %}
+{% set version = "2.21.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e26a99b75be2fc42375b2b4b355dc44fa1e59efc773afa17b784e1a4c0a818c9
+  sha256: 621161a9b5aa015681c2ee1bb8873cee2ee6b440d84040da9d2a57cd67f7d5e5
 
 build:
   noarch: python
