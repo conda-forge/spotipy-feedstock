@@ -1,11 +1,11 @@
-About spotipy
-=============
+About spotipy-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/spotipy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://spotipy.readthedocs.org/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/spotipy-feedstock/blob/main/LICENSE.txt)
 
 Summary: A light weight Python library for the Spotify Web API
 
